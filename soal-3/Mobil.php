@@ -1,15 +1,38 @@
 <?php
 class Mobil {
-    // lengkapi dengan atribut dan metode sesuai pada buku
+    public $merk;
+    public $tahun;
+    public $warna;
+    public $kecepatan;
 
-    // contoh metode melaju()
     public function melaju() {
         echo "Mobil sedang melaju.";
     }
-    
+
+    public function berhenti() {
+        echo "Mobil sedang berhenti.";
+    }
+
+    public function mundur() {
+        echo "Mobil sedang mundur.";
+    }
+
+    public function maju() {
+        echo "Mobil sedang maju.";
+    }
 }
 
-// buat sebuah objek mobil dan lengkapi atributnya
+$mobil = new Mobil();
+$mobil->merk = "Toyota";
+$mobil->tahun = 2022;
+$mobil->warna = "Merah";
+$mobil->kecepatan = 120;
 
-
-// panggil keempat metode yang terdapat pada kelas Mobil
+$mobil->melaju();
+echo "<br>";
+$mobil->berhenti();
+echo "<br>";
+$mobil->mundur();
+echo "<br>";
+$mobil->maju();
+echo "<br>";
